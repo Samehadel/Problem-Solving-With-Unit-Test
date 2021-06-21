@@ -24,7 +24,7 @@ public class ProductOfAllOtherTest {
 
     @ParameterizedTest
     @MethodSource("initData")
-    public void checkCafeOrder(int [] intArray, int [] expected){
+    public void checkProductOfAllOtherTest(int [] intArray, int [] expected){
         int [] actual = ProductOfAllOther.getProductsOfAllIntsExceptAtIndex(intArray);
 
         Assert.assertArrayEquals(expected, actual);

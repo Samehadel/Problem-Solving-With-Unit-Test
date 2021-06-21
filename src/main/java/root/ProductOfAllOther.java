@@ -11,6 +11,7 @@ package root;
 
  */
 public class ProductOfAllOther {
+
     public static int[] getProductsOfAllIntsExceptAtIndex(int[] intArray){
         int [] beforeIndex = new int [intArray.length];
         int [] afterIndex = new int [intArray.length];
