@@ -22,9 +22,10 @@ public class ProductOfAllOther {
                 beforeIndex[i] = beforeIndex[i - 1] * intArray[i];
         }
 
-        for(int i = intArray.length - 1; i >= 0; i--){
-            if(i == intArray.length - 1)
-                afterIndex[intArray.length - 1] = intArray[intArray.length - 1];
+        int lastIndex = intArray.length - 1;
+        for(int i = lastIndex; i >= 0; i--){
+            if(i == lastIndex)
+                afterIndex[lastIndex] = intArray[lastIndex];
             else
                 afterIndex[i] = afterIndex[i + 1] * intArray[i];
         }
