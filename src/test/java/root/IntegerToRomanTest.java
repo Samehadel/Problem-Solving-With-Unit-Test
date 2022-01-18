@@ -13,8 +13,7 @@ public class IntegerToRomanTest {
         return Arrays.asList(
                 Arguments.of(3, "III"),
                 Arguments.of(58, "LVIII"),
-                Arguments.of(1994, "MCMXCIV"),
-                Arguments.of(1995, "MVM")
+                Arguments.of(1994, "MCMXCIV")
         );
     }
 
