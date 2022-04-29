@@ -26,7 +26,7 @@ class TreeNode {
 public class IsValidBST {
 
     private static List<Integer> list;
-    
+
     public static boolean isValidBST(TreeNode root) {
         list = new ArrayList<>();
 
