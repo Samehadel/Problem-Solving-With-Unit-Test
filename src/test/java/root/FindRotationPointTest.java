@@ -31,7 +31,7 @@ public class FindRotationPointTest {
     @MethodSource("initData")
     public void checkFindRotationPoint(int [] input, int expected){
         int actual = FindRotationPoint.findRotationPoint(input);
-
+        int x = 2 ^ 5;
         Assert.assertEquals(expected, actual);
     }
 }
