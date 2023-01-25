@@ -36,5 +36,32 @@ public class SearchMatrixTest {
 		boolean actual = SearchMatrix.searchMatrix(nums, target);
 
 		Assertions.assertEquals(expected, actual);
+		int [] a = new int[]{2, 4, 7, 5, 3, 5, 8, 5, 1, 7};
+		System.out.println(solution(a, 4, 10));
 	}
+
+	int solution(int[] a, int m, int k) {
+		int count = 0;
+
+		for(int index = 0; index < (a.length - m + 1); index ++){
+			count += countInSubArray(a, index, index + m, k);
+		}
+
+		return count;
+	}
+
+
+	int countInSubArray(int [] a, int low, int high, int k){
+		int count = 0;
+		for(int i = low; i < high; i++){
+			for(int j = i; j < high; j++){
+				if(i != j && a[i] + a[j] == k ){
+					count ++;
+				}
+			}
+		}
+
+		return count;
+	}
+
 }
